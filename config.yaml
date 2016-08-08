@@ -1,0 +1,6 @@
+name: vs_proj
+version: 1
+
+libraries:
+- name: "django"
+  version: "1.8.3"
