@@ -3,7 +3,7 @@
 - 工作原理：
 slave机器不断产生log，每隔十分钟采一次点，每隔一小时上传一次，
 web后端机器由脚本控制获取一次，图像随之动态更新。
-后端框架采用django，前端绘图库用的时js.flot
+后端框架采用django，前端绘图库：jquery.flot
  
 - 数据log如下：
 ![](http://visualspider-visualspider.stor.sinaapp.com/log.png)
