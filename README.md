@@ -10,6 +10,9 @@ web后端机器由脚本控制获取一次，图像随之动态更新。
 - 呈现效果如图：
 ![](http://visualspider-visualspider.stor.sinaapp.com/1.visualspider.applinzi.com-scholar-show-.gif)
 
+- 站点部署于：
+http://1.visualspider.applinzi.com/scholar/show/
+
 - 总结：
  实现了基本的可视化处理，虽然不落在控制台程序员的喜好范围内，
 但对外展示工作时，需要一种更友好的表达。本项目仅作此理解。2016-8-9
