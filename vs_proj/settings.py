@@ -26,7 +26,7 @@ SECRET_KEY = '#-&5y4z-9p$b)#!^bn5qh%ova+xl5zed97+x48t5_uw-q&)=gl'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost','visualspider.applinzi.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost','visualspider.applinzi.com','45.32.113.65']
 
 
 SESSION_COOKIE_AGE = 10*600
@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'scholar',
+    'gunicorn',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -106,11 +107,11 @@ else:
     CACHES_BACKEND = 'django.core.cache.backends.memcached.MemcachedCache'
     if local_db:
         #使用本地数据库
-        DB_HOST = 'localhost'
-        DB_PORT = '3306'
-        DB_USER = 'root'
-        DB_PASS = ''
-        DB_DB = 'visualspider'
+        DB_HOST = None#'10.8.3.97'
+        DB_PORT = 5432
+        DB_USER = 'lyn'
+        DB_PASS = 'tonylu716'
+        DB_DB = 'sf_development'
     else:
         #使用sae远程数据库
         from sae._restful_mysql import monkey
@@ -124,7 +125,7 @@ else:
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': DB_DB,
         'USER': DB_USER,
         'PASSWORD': DB_PASS,

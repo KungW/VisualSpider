@@ -7,7 +7,7 @@ from scholar.func import *
 def show(request):
     return render_to_response('scholar/show_data.html')
 
-
+'''
 @json_response
 def get_spider_data(request):
     ret = {'data':None,'status':0,'message':None}
@@ -17,3 +17,4 @@ def get_spider_data(request):
     ret['data'] = read_spider_log()
     ret['status'] = 1
     return ret
+'''
