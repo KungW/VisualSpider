@@ -4,5 +4,6 @@ from scholar.views import *
 
 urlpatterns = [
     url(r'^show/$', show),
+    url(r'^get_store_info',get_store_info)
     #url(r'^get_spider_data/', get_spider_data),
 ]

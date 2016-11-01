@@ -123,6 +123,8 @@ else:
         DB_PASS = 'ih1hmhzki3kh12yikm1214kmwkwkkwwjjixjy450'
         DB_DB = 'app_visualspider'
 
+DATABASES = {}
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -133,8 +135,8 @@ DATABASES = {
         'PORT': DB_PORT,
     }
 }
+'''
 
-# Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
